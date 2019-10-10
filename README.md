@@ -1,2 +1,2 @@
-# Programaci--codewars-exercicis
+# Programacio-codewars-exercicis
 Exercicis del codewars y de clase
