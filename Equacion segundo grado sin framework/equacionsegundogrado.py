@@ -16,11 +16,10 @@ def raizEcuacionSegundoGrado(a, b, c):
         x = sqrt(-c/a)
         y = -sqrt(-c/a)
         return x, y
-   
-    else:
-        x = (-b + sqrt(b**2 - 4*a*c)) / (2 * a)
-        y = (-b - sqrt(b**2 - 4*a*c)) / (2 * a)
-        return x, y
+
+    x = (-b + sqrt(b**2 - 4*a*c)) / (2 * a)
+    y = (-b - sqrt(b**2 - 4*a*c)) / (2 * a)
+    return x, y
 
 
 if __name__ == "__main__":
