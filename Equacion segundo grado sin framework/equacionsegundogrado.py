@@ -17,6 +17,9 @@ def raizEcuacionSegundoGrado(a, b, c):
         y = -sqrt(-c/a)
         return x, y
 
+    if a == 0:
+        return None
+
     x = (-b + sqrt(b**2 - 4*a*c)) / (2 * a)
     y = (-b - sqrt(b**2 - 4*a*c)) / (2 * a)
     return x, y
