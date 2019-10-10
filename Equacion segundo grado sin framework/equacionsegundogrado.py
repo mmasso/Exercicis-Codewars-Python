@@ -1,6 +1,7 @@
 
 from math import sqrt
 
+
 def raizEcuacionSegundoGrado(a, b, c):
 
     if b == c == 0:
@@ -16,10 +17,10 @@ def raizEcuacionSegundoGrado(a, b, c):
         y = -sqrt(-c/a)
         return x, y
    
-
-    
-        return x ,y
-
+    else:
+        x = (-b + sqrt(b**2 - 4*a*c)) / (2 * a)
+        y = (-b - sqrt(b**2 - 4*a*c)) / (2 * a)
+        return x, y
 
 
 if __name__ == "__main__":
