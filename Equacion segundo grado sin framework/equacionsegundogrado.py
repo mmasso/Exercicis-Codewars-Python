@@ -18,11 +18,20 @@ def raizEcuacionSegundoGrado(a, b, c):
         return x, y
 
     if a == 0:
-        return None
+        x = None
+        y = None
+        return x, y
 
-    x = (-b + sqrt(b**2 - 4*a*c)) / (2 * a)
-    y = (-b - sqrt(b**2 - 4*a*c)) / (2 * a)
-    return x, y
+    radicando = b**2 - 4*a*c
+   
+    if radicando >= 0:
+        x = (-b + sqrt(radicando)) / (2 * a)
+        y = (-b - sqrt(radicando)) / (2 * a)
+        return x, y
+    else:
+        x = None
+        y = None
+        return x, y        
 
 
 if __name__ == "__main__":
@@ -35,6 +44,9 @@ if __name__ == "__main__":
     x, y = raizEcuacionSegundoGrado(1, 0, -1)
     assert x == 1
     assert y == -1
+    x, y = raizEcuacionSegundoGrado(0, 20, 5)
+    assert x == None
+    assert y == None
     x, y = raizEcuacionSegundoGrado(5, -20, 15)
     assert x == 3
     assert y == 1
