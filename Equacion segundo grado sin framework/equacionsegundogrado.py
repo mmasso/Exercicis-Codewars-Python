@@ -23,7 +23,7 @@ def raizEcuacionSegundoGrado(a, b, c):
         return x, y
 
     radicando = b**2 - 4*a*c
-    
+   
     if radicando >= 0:
         x = (-b + sqrt(radicando)) / (2 * a)
         y = (-b - sqrt(radicando)) / (2 * a)
@@ -31,8 +31,7 @@ def raizEcuacionSegundoGrado(a, b, c):
     else:
         x = None
         y = None
-        return x, y
-            
+        return x, y        
 
 
 if __name__ == "__main__":
@@ -51,5 +50,3 @@ if __name__ == "__main__":
     x, y = raizEcuacionSegundoGrado(5, -20, 15)
     assert x == 3
     assert y == 1
-    
-    
