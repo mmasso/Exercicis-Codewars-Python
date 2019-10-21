@@ -52,3 +52,4 @@ def test_eliminar_elemento_de_minimos_repetido_al_final():
                              9, 6, -9, -8, 9, -2, -1, -1, 2, -7, 10, -10, -8,
                              2, -10, -5, -3], 8) == \
                                             [-6, -7, -9, -8, -7, -10, -8, -10]
+                                            
