@@ -1,7 +1,7 @@
-def smallest_elements(ll,n):
-    nn=len(ll)-n
-    ll.reverse()
-    for x in range(nn):
-        ll=ll[:ll.index(max(ll))]+ll[ll.index(max(ll))+1:]
-    ll.reverse()
-    return ll
+def first_n_smallest(llistaNumeros, longitudLlista):
+    resta = len(llistaNumeros)-longitudLlista
+    llistaNumeros.reverse()
+    for x in range(resta):
+        llistaNumeros = llistaNumeros[:llistaNumeros.index(max(llistaNumeros))] + llistaNumeros[llistaNumeros.index(max(llistaNumeros))+1:]
+    llistaNumeros.reverse()
+    return llistaNumeros
