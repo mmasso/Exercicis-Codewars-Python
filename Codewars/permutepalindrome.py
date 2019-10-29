@@ -6,21 +6,18 @@ def permute_a_palindrome(input):
     else:
         return comparacion_input(input)
 
-#crear un for on dugui un contador per a cada lletra del input
-#el codi que jo he creat serveix per a paraules que tenguin nomes una lletra diferent
 
 def comparacion_input(input):
+    countImpar = 0
     input = input.lower()
-    contador = 0
-    for b in input:
-        a = input.count(b)
-        if a % 2 != 0:
-            contador = contador + 1
-    if contador % 2 != 0:
+    for char in input:
+        number = input.count(char)
+        if number % 2 != 0:
+            countImpar = countImpar + 1
+    if countImpar == 1:
         return True
     else:
         return False
-    return True
 
 
 def reverse(input):
