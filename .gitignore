@@ -11,3 +11,7 @@ Codewars/SmallestElementsPYTEST/__pycache__/smallest_elements.cpython-37.pyc
 Codewars/SmallestElementsPYTEST/__pycache__/test_smallest_elements.cpython-37-pytest-5.2.1.pyc
 Codewars/loose_change/__pycache__/test_LooseChange.cpython-37-pytest-5.2.1.pyc
 Codewars/loose_change/__pycache__/LooseChange.cpython-37.pyc
+Sudoku/__pycache__/checkNumero.cpython-37.pyc
+Sudoku/__pycache__/checkFilas.cpython-37.pyc
+Sudoku/__pycache__/checkCuadrado.cpython-37.pyc
+Sudoku/__pycache__/checkColumnas.cpython-37.pyc
