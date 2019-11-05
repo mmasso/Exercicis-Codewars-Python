@@ -1,7 +1,7 @@
-from checkCuadrado import checkCuadrado
-from checkNumero import checkNumerosValidos
-from checkFilas import checkFilas
 from checkColumnas import checkColumnas
+from checkCuadrado import checkCuadrado
+from checkFilas import checkFilas
+from checkNumero import checkNumero
 
 
 def check_sudoku(sudoku):
@@ -11,3 +11,14 @@ def check_sudoku(sudoku):
 
 
 if __name__ == '__main__':
+    assert check_sudoku([[1, 2, 3, 4],
+                         [2, 3, 1, 3],
+                         [3, 1, 2, 3],
+                         [4, 4, 4, 2]]) == False
+    assert check_sudoku([[1, 2, 3],
+                         [2, 3, 1],
+                         [3, 1, 2]]) == True
+    assert check_sudoku([[1, 2, 3, 4],
+                         [2, 3, 4, 1],
+                         [3, 4, 1, 2],
+                         [4, 1, 2, 3]]) == True
