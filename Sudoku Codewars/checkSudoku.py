@@ -2,11 +2,12 @@ from checkColumnas import checkColumnas
 from checkCuadrado import checkCuadrado
 from checkFilas import checkFilas
 from checkNumero import checkNumero
+from checkTresxTres import checkTresxTres
 
 
 def check_sudoku(sudoku):
     validezSudoku = checkCuadrado(sudoku) and checkNumero(sudoku) \
-        and checkFilas(sudoku) and checkColumnas(sudoku)
+        and checkFilas(sudoku) and checkColumnas(sudoku) and checkTresxTres
     return validezSudoku
 
 
